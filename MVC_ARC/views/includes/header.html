@@ -1,0 +1,39 @@
+ <?php
+   App::import('Helper','Common');
+   $obj   =   new CommonHelper();
+   $menu  =   $obj->getMenu();
+   
+   // for example  for print all menu call pr static function of App class in lib directory -> App::pr($menu);
+    
+
+ ?>
+<div id="home" class="banner">
+    <!-- navigation -->
+   
+    <div class="navigation" >
+        <div class="header-logo-info" style="float:left;">
+            <h1><a href="index.html"><img src="<?php SITEPATH.DS.'webroot'.DS ?>img/logo.png" alt="" /></a>
+        </div>
+        <div class="" >
+            <nav class="navbar navbar-default">
+                <div class="navbar-header">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                  </button>
+                </div>
+                <div class="collapse navbar-collapse nav-wil" id="bs-example-navbar-collapse-1">
+		          <ul class="nav navbar-nav cl-effect-2">
+			          <?php 
+			             foreach($menu as $menu_name) {  ?>
+			            <li><a href="pages/<?php echo $menu_name['alias']; ?> "><?php echo $menu_name['titile']; ?> <?php if( App::getRouter()->getController() == $menu_name['alias'] ){ ?> class='Active' <?php } ?> </a></li>
+			           <?php } ?>        
+	                 
+                  </ul> 
+                </div>
+            </nav>
+        </div>
+    </div>
+    
+</div>
+<!-- //navigation -->
+<!--/header-->

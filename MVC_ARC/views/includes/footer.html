@@ -1,0 +1,109 @@
+
+    <!-- footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="foot-bottom">
+                <div class="col-md-4 flick">
+                    <h4>Flickr Stream</h4>
+                        <ul>
+                            <li><img src="<?php SITEPATH.DS.'webroot'.DS ?>img/img1.jpg" class="img-responsive" alt="" /></li>
+                            <li><img src="<?php SITEPATH.DS.'webroot'.DS ?>img/img3.jpg" class="img-responsive" alt="" /></li>
+                            <li><img src="<?php SITEPATH.DS.'webroot'.DS ?>img/img4.jpg" class="img-responsive" alt="" /></li>
+                            <li><img src="<?php SITEPATH.DS.'webroot'.DS ?>img/img6.jpg" class="img-responsive" alt="" /></li>
+                            <li><img src="<?php SITEPATH.DS.'webroot'.DS ?>img/img3.jpg" class="img-responsive" alt="" /></li>
+                            <li><img src="<?php SITEPATH.DS.'webroot'.DS ?>img/img1.jpg" class="img-responsive" alt="" /></li>
+                            <div class="clearfix"> </div>   
+                        </ul>
+                </div>
+                <div class="col-md-4 flick1">
+                    <h4>Popular Posts</h4>
+                    <div class="flick2">
+                        <div class="flick-left">
+                        <div class="portfolio-wrapper ">
+                        <img src="<?php SITEPATH.DS.'webroot'.DS ?>img/img1.jpg" class="img-responsive" alt="" />
+                    </div>
+                        </div>
+                        <div class="flick-right">
+                            <a href="#" class="p-post">Vintage Photography of a Woman with Tools</a>
+                            <ul>
+                                <li><a href="#"><i class="comts"> </i><span class="icon_text">8 comments</span></a></li>
+                            </ul>
+                        </div>
+                        <div class="clearfix"> </div>   
+                    </div>
+                    <div class="flick2">
+                        <div class="flick-left">
+                        <div class="portfolio-wrapper ">
+                        <img src="<?php SITEPATH.DS.'webroot'.DS ?>img/img3.jpg" class="img-responsive" alt="" />
+                        </div>
+                        </div>
+                        <div class="flick-right">
+                            <a href="#" class="p-post">Vintage Photography of a Woman with Tools</a>
+                            <ul>
+                                <li><a href="#"><i class="comts"> </i><span class="icon_text">12 comments</span></a></li>
+                            </ul>
+                        </div>
+                        <div class="clearfix"> </div>   
+                    </div>
+                </div>
+                <div class="col-md-4 flick flikker">
+                    <h4>Stay In Touch</h4>
+                    <div class="flick-form_grid">
+                       <form method="post" action="#">
+                         <input type="text" class="textbox" value="Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}">
+                         <input type="text" class="textbox" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}">
+                         <div class="smt">
+                            <input type="submit" value="Subscribe">
+                         </div>
+                       </form>
+                  </div>
+                </div>
+                    <div class="clearfix"> </div>
+            </div>
+        </div>
+    </div>
+<!-- /footer -->
+<!--copyrights-->
+<div class="copyrights">
+    <div class="container">
+        <div class="footer-logo">
+            <a href="#"><img src="<?php SITEPATH.DS.'webroot'.DS ?>img/logo.png" alt=""/></a>
+        </div>
+        
+        
+        <?php  if( Session::hasFlash() ){ ?>
+        <div class="alert alert-info" role="alert" style=" margin-left:25%;">
+           <?php Session::Flash(); ?>
+        </div>
+        <?php } ?>
+        
+        <div class="copy-right">
+            <p> &copy;  dd 2015 Urban Furniture. All rights reserved | Design by <a href="http://w3layouts.com/">W3layouts</a></p>
+
+        </div>
+                <script type="text/javascript">
+                                    $(document).ready(function() {
+                                        /*
+                                        var defaults = {
+                                            containerID: 'toTop', // fading element id
+                                            containerHoverID: 'toTopHover', // fading element hover id
+                                            scrollSpeed: 1200,
+                                            easingType: 'linear' 
+                                        };
+                                        */
+                                        
+                                        $().UItoTop({ easingType: 'easeOutQuart' });
+                                        
+                                    });
+                                </script>
+        <a href="#home" id="toTop" class="scroll" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+    </div>
+</div>
+<!--/copyrights-->
+<!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <!-- js -->
+         <script src="<?php SITEPATH.DS.'webroot'.DS ?>js/bootstrap.js"></script>
+    <!-- js -->
+
